@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ Only one valid answer exists.
         */
 public class TwoSum {
     public static void main(String[] args) {
-        int[] arr = twoSum(new int[]{2,7,11,15},9);
+        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
     }
 
     private static int[] twoSum(int[] arr, int target) {
@@ -32,7 +33,7 @@ public class TwoSum {
             if (map.containsKey(diff)) {
                 return new int[]{map.get(diff), i};
             }
-            map.put(arr[i], i);
+            map.put(arr[i], i); //put current element, index in map
         }
         throw new IllegalArgumentException("target not found");
     }
