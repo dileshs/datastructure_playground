@@ -1,4 +1,4 @@
-package main.java;
+package main.java.strings;
 
 /*
 Given an integer x, return true if x is a

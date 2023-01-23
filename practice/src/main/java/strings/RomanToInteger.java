@@ -1,4 +1,4 @@
-package main.java;
+package main.java.strings;
 
 import java.util.Map;
 /*Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
